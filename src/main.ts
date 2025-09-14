@@ -1,7 +1,8 @@
 import fs from "fs";
 
 function main(input: string) {
-
+  console.log(input)
 }
 
-main(fs.readFileSync(0, "utf8"));
+const input = fs.readFileSync(0, "utf8");
+main(input);
