@@ -1,8 +1,10 @@
 import * as fs from "fs";
 
-function main(input: string) {
-  console.log(input);
+function main(tokens: string[]) {
+  // nextは次の標準入力を取得する関数
+  let idx = 0;
+  const next = () => tokens[idx++];
 }
 
-const input = fs.readFileSync(0, "utf8");
-main(input);
+// 標準入力全体を読み込み、空白、改行で分割してStringの配列に格納
+main(fs.readFileSync(0, "utf8").trim().split(/\s+/));
