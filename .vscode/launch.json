@@ -7,7 +7,11 @@
       "name": "yarn dev (stdin: input/data.txt)",
       "runtimeExecutable": "yarn",
       "runtimeArgs": ["dev"],
-      "preLaunchTask": "tsc: build - tsconfig.json"
+      "preLaunchTask": "tsc: build - tsconfig.json",
+
+      // ここを追加
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart"
     }
   ]
 }
